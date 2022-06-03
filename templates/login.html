@@ -1,11 +1,33 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Index
+    Login
 {% endblock %}
 
 {% block main %}
 
-
+<div class="center">
+    <h1>Login</h1>
+    <form method="post">
+        <div>
+            <div class="input_text">
+                <input type="text" name="username">
+                <label>Username</label>
+            </div>
+            <div class="input_text">
+                <input type="text" name="password">
+                <label>Password</label>
+            </div>
+            <div> Forgot Password?</div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+            <div>Not a member?</div>
+            <div>
+                <a ref="#">Sign Up</a>
+            </div>
+        </div>
+    </form>
+</div>
 
 {% endblock %}
